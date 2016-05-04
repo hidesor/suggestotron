@@ -9,6 +9,8 @@
 <body>
 
 <%= yield %>
-
+<% flash.each do |name, msg| %>
+    <div><%= msg %></div>
+<% end %>
 </body>
 </html>
